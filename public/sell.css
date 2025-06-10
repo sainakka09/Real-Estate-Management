@@ -1,0 +1,116 @@
+/* .cars-section {
+  padding: 50px;
+  background-color: transparent;
+  text-align: center;
+}
+.car-card {
+  width: 30%;
+  background-color: transparent;
+  margin: 20px;
+  padding: 20px;
+  display: inline-block;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  border: #000000;
+  border-radius: 10px;
+  height: auto;
+}
+.car-card img {
+  width: 100%;
+  height: auto;
+}
+.car-card h3 {
+  font-size: 24px;
+  color: #003366;
+}
+.car-card p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.car-card button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  border: solid black 2px;
+  font-size: 16px;
+}
+.car-card button:hover {
+  background-color: transparent;
+  color: black;
+} */
+
+.home {
+  background-color: transparent;
+}
+
+.home .center {
+  display: flex;
+  min-height: 700px;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .center form {
+  background-color: transparent;
+  padding: 30px;
+  width: 50rem;
+}
+
+.home .center form h3 {
+  padding-bottom: 16px;
+  text-align: center;
+  color: black;
+  font-size: 28px;
+}
+
+.home .center form .flex {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.home .center form .box {
+  flex: 1 1 20rem;
+}
+
+.home .center form .box .input {
+  width: 95.5%;
+  border: solid black 2px;
+  padding: 8px;
+  font-size: 16px;
+  color: black;
+  background-color: transparent;
+  font-weight: 500;
+  border-radius: 6px;
+}
+.home .center form .box .input[type="number"]::-webkit-inner-spin-button,
+.home .center form .box .input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.home .center form .box .input-img {
+  display: none;
+}
+.home .center form .box p {
+  font-size: 18px;
+  font-weight: 550;
+}
+
+.home .center form .box span {
+  color: red;
+}
+.home .center form .btn {
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+  width: 98%;
+  padding: 8px;
+  font-size: 18px;
+  background-color: black;
+  border-radius: 6px;
+}
+
+.home .center form .btn:hover {
+  background-color: transparent;
+  color: black;
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="website icon" type="x-icon" href="fevi.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate Management</title>
+    <meta
+      name="keywords"
+      content="real estate, property management, buy, sell, rent, home, house"
+    />
+    <meta
+      name="description"
+      content=" Real Estate Management - Your Dream Home Awaits"
+    />
+    <meta
+      property="og:description"
+      content=" Real Estate Management - Your Dream Home Awaits"
+    />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="sell.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navdiv">
+          <div class="logo">
+            <a href="index.html"
+              ><img
+                src="ho.png"
+                alt="Logo"
+                class="logo"
+                style="width: 100px; height: auto; margin-right: auto"
+            /></a>
+          </div>
+          <ul>
+            <li>
+              <a href="index.html"><strong>Home</strong></a>
+            </li>
+            <li>
+              <a href="buy.html"><strong>Buy</strong></a>
+            </li>
+            <li>
+              <a href="sell.html"><strong>Sell</strong></a>
+            </li>
+            <li>
+              <a href="rent.html"><strong>Rent</strong></a>
+            </li>
+            <li>
+              <a href="aboutus.html"><strong>About Us</strong></a>
+            </li>
+            <li>
+              <a href="signin.html"><strong>Sign In</strong></a>
+            </li>
+            <li>
+              <a href="signup.html"><strong>Sign Up</strong></a>
+            </li>
+            <li>
+              <a href="account.html"
+              <i class='bx bxs-user'></i>
+            </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="home">
+      <section class="center">
+        <form id="propertyForm" enctype="multipart/form-data">
+          <h3>Sell Property</h3>
+          
+          <div class="box">
+            <p>Enter Your Location<span>*</span></p>
+            <input type="text" name="location" class="input" required placeholder="Enter Your City Name">
+          </div>
+         
+          <div class="flex">
+            <div class="box">
+              <p>Property type<span>*</span></p>
+              <select name="type" class="input" required>
+                <option value="flat">Flat</option>
+                <option value="house">House</option>
+                <option value="shop">Shop</option>
+              </select>
+            </div>
+            
+            <div class="box">
+              <p>No of BHK<span>*</span></p>
+              <select name="bhk" class="input" required>
+                <option value="1BHK">1BHK</option>
+                <option value="2BHK">2BHK</option>
+                <option value="3BHK">3BHK</option>
+                <option value="4BHK">4BHK</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="box">
+            <p>Price (₹)<span>*</span></p>
+            <input class="input" type="number" name="price" min="1" required>
+          </div>
+          
+          <div class="box">
+            <p>Square Feet<span>*</span></p>
+            <input class="input" type="number" name="squareFeet" min="1" required>
+          </div>
+          
+          <div class="box">
+            <p>Contact Number<span>*</span></p>
+            <input class="input" type="tel" name="contactNumber" required>
+          </div>
+          
+          <div class="box">
+            <p>Upload Images (Max 10)<span>*</span></p>
+            <input class="input-img" type="file" id="propertyImages" name="images" accept="image/*" multiple required>
+            <label for="propertyImages" class="btn">Choose Images</label>
+            <div id="imagePreview"></div>
+          </div>
+          
+          <div class="box">
+            <p>Description<span>*</span></p>
+            <textarea name="description" class="input" required></textarea>
+          </div>
+          
+          <button type="submit" class="btn">List Property</button>
+        </form>
+      </section>
+    </div>
+          <footer>
+      <!-- <div class="box">
+        <button type="submit" class="btn"><label for="img">Upload Images</label></button>
+        <input class="input-img" type="file" accept="Images" id="img" multiple>
+      </div> -->
+      <p>
+        &copy; Colony.com - All Rights Reserved |
+        <a href="terms.html">Terms And Conditions</a>
+      </p>
+      <p>
+        Follow us:
+        <img
+          src="facebook.png"
+          alt="facebook"
+          style="width: 20px; vertical-align: middle"
+        /><a href="#" target="_blank">Facebook</a> |
+        <img
+          src="insta.png"
+          alt="insta"
+          style="width: 20px; vertical-align: middle"
+        /><a href="#" target="_blank">Instagram</a> |
+        <img
+          src="gmail.png"
+          alt="email"
+          style="width: 20px; vertical-align: middle"
+        /><a href="mailto:sai.nakka09@gmail.com" target="_blank"> Contact Us</a>
+      </p>
+    </footer>
+    <script src="js/sell.js"></script>
+  </body>
+</html>

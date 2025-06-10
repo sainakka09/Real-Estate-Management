@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="website icon" type="x-icon" href="fevi.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate Management</title>
+    <meta
+      name="keywords"
+      content="real estate, property management, buy, sell, rent, home, house"
+    />
+    <meta
+      name="description"
+      content=" Real Estate Management - Your Dream Home Awaits"
+    />
+    <meta
+      property="og:description"
+      content=" Real Estate Management - Your Dream Home Awaits"
+    />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="signin.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css" />
+    <script>
+      const form = document.querySelector("form");
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const username = form.querySelector('input[type="text"]').value;
+        const password = form.querySelector('input[type="password"]').value;
+
+        try {
+          const response = await fetch("http://localhost:5000/login", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ username, password }),
+          });
+
+          const result = await response.json();
+          if (response.ok) {
+            alert(result.message);
+            // Redirect or show dashboard
+          } else {
+            alert(result.message);
+          }
+        } catch (err) {
+          alert("Error connecting to server");
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navdiv">
+          <div class="logo">
+            <a href="index.html"
+              ><img
+                src="ho.png"
+                alt="Logo"
+                class="logo"
+                style="width: 100px; height: auto; margin-right: auto"
+            /></a>
+          </div>
+          <ul>
+            <li>
+              <a href="index.html"><strong>Home</strong></a>
+            </li>
+            <li>
+              <a href="buy.html"><strong>Buy</strong></a>
+            </li>
+            <li>
+              <a href="sell.html"><strong>Sell</strong></a>
+            </li>
+            <li>
+              <a href="rent.html"><strong>Rent</strong></a>
+            </li>
+            <li>
+              <a href="aboutus.html"><strong>About Us</strong></a>
+            </li>
+            <li>
+              <a href="signin.html"><strong>Sign In</strong></a>
+            </li>
+            <li>
+              <a href="signup.html"><strong>Sign Up</strong></a>
+            </li>
+            <li>
+                <a href="account.html"
+                <i class='bx bxs-user'></i>
+              </a>
+              </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="login">
+      <form action="/login" method="post">
+        <h1>Login</h1>
+        <div class="input-box">
+          <input type="text" placeholder="Username" required />
+        </div>
+
+        <div class="input-box">
+          <input
+            type="password"
+            name="password"
+            id="pass"
+            placeholder="••••••••••"
+            required
+          />
+        </div>
+
+        <!-- <div class="remember-forgot">
+          <label for="remember"
+            ><input type="checkbox" name="rememeber" id="remember" />Remember
+            Me</label
+          >
+          <a href="forgotpass.html">Forgot Password?</a>
+        </div> -->
+        <button class="btn" type="submit">Login</button>
+        <div class="register-link">
+          <p>Don't have account? <a href="signup.html">Click here</a></p>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <p>
+        &copy; Colony.com - All Rights Reserved |
+        <a href="terms.html">Terms And Conditions</a>
+      </p>
+      <p>
+        Follow us:
+        <img
+          src="facebook.png"
+          alt="facebook"
+          style="width: 20px; vertical-align: middle"
+        /><a href="#" target="_blank">Facebook</a> |
+        <img
+          src="insta.png"
+          alt="insta"
+          style="width: 20px; vertical-align: middle"
+        /><a href="#" target="_blank">Instagram</a> |
+        <img
+          src="gmail.png"
+          alt="email"
+          style="width: 20px; vertical-align: middle"
+        /><a href="mailto:sai.nakka09@gmail.com" target="_blank"> Contact Us</a>
+      </p>
+    </footer>
+    <script src="js/signin.js"></script>
+  </body>
+</html>

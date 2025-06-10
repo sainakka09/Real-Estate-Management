@@ -1,0 +1,67 @@
+.cars-section {
+  padding: 50px;
+  background-color: transparent;
+  text-align: center;
+}
+.car-card {
+  width: 30%;
+  background-color: transparent;
+  margin: 20px;
+  padding: 20px;
+  display: inline-block;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  border: #000000;
+  border-radius: 10px;
+  height: auto;
+}
+.car-card img {
+  width: 100%;
+  height: auto;
+}
+.car-card h3 {
+  font-size: 24px;
+  color: #003366;
+}
+.car-card p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.car-card button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  border: solid black 2px;
+  font-size: 16px;
+}
+.car-card button:hover {
+  background-color: transparent;
+  color: black;
+}
+.whatsapp-btn {
+  background-color: #25d366;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  width: 465px;
+  margin: 0 auto;
+}
+.dialer {
+  background-color: #8c85ff;
+  color: rgb(255, 255, 255);
+  padding: 10px 30px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 465px;
+}

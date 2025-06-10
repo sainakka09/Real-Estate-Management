@@ -1,0 +1,17 @@
+.info h1 {
+  text-align: center;
+  font-size: 35px;
+}
+.info .sub-info {
+  margin: 30px;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+.info .sub-info a {
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+}
+.info .sub-info p {
+  font-size: 18px;
+}
